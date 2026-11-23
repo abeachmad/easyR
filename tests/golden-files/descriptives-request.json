@@ -1,0 +1,16 @@
+{
+  "datasetPath": "C:\\Users\\Admin\\Downloads\\EasyR\\tests\\golden-files\\mtcars.rds",
+  "moduleId": "descriptives",
+  "variables": {
+    "dependent": [
+      "mpg",
+      "wt"
+    ]
+  },
+  "options": {
+    "normalityTest": true,
+    "plotHistogram": true,
+    "plotBoxplot": false
+  },
+  "outputDir": "C:\\Users\\Admin\\Downloads\\EasyR\\tests\\golden-files"
+}

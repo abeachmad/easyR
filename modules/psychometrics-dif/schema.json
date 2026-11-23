@@ -1,0 +1,15 @@
+{
+  "id": "psychometrics-dif",
+  "title": "Differential Item Functioning",
+  "category": "Factor & Clustering",
+  "variableSlots": [
+    { "id": "items", "label": "Test Items (minimum 3)", "allowedTypes": ["numeric", "ordinal"], "multiple": true, "required": true },
+    { "id": "grouping", "label": "Comparison Group", "allowedTypes": ["nominal", "ordinal"], "multiple": false, "required": true }
+  ],
+  "options": [
+    { "id": "modelType", "label": "IRT Model", "type": "select", "default": "Rasch", "choices": [{ "label": "Rasch", "value": "Rasch" }, { "label": "2PL", "value": "2PL" }, { "label": "Graded Response", "value": "graded" }], "group": "Model" },
+    { "id": "difMethod", "label": "DIF Method", "type": "select", "default": "drop", "choices": [{ "label": "Likelihood Ratio (drop)", "value": "drop" }, { "label": "Score / LM (add)", "value": "add" }], "group": "Testing" },
+    { "id": "pAdjust", "label": "P-value Adjustment", "type": "select", "default": "BH", "choices": [{ "label": "Benjamini-Hochberg", "value": "BH" }, { "label": "Bonferroni", "value": "bonferroni" }, { "label": "None", "value": "none" }], "group": "Testing" },
+    { "id": "plotDIF", "label": "Plot DIF item curves", "type": "checkbox", "default": true, "group": "Plots" }
+  ]
+}

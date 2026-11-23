@@ -1,0 +1,18 @@
+{
+  "datasetPath": "C:\\Users\\Admin\\Downloads\\EasyR\\tests\\golden-files\\mtcars.rds",
+  "moduleId": "ttest-independent",
+  "variables": {
+    "dependent": [
+      "mpg"
+    ],
+    "grouping": "am"
+  },
+  "options": {
+    "varEqual": false,
+    "confLevel": 0.95,
+    "normalityTest": true,
+    "effectSize": true,
+    "plotDescriptives": true
+  },
+  "outputDir": "C:\\Users\\Admin\\Downloads\\EasyR\\tests\\golden-files"
+}

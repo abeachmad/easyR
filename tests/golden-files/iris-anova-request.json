@@ -1,0 +1,16 @@
+{
+  "datasetPath": "C:\\Users\\Admin\\Downloads\\EasyR\\tests\\golden-files\\iris.rds",
+  "moduleId": "anova-oneway",
+  "variables": {
+    "dependent": [
+      "Sepal.Length"
+    ],
+    "grouping": "Species"
+  },
+  "options": {
+    "welch": true,
+    "levene": false,
+    "tukey": true
+  },
+  "outputDir": "C:\\Users\\Admin\\Downloads\\EasyR\\tests\\golden-files"
+}

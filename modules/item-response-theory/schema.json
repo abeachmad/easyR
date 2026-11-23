@@ -1,0 +1,16 @@
+{
+  "id": "item-response-theory",
+  "title": "Item Response Theory",
+  "category": "Factor & Clustering",
+  "variableSlots": [
+    { "id": "items", "label": "Test Items (minimum 3)", "allowedTypes": ["numeric", "ordinal"], "multiple": true, "required": true }
+  ],
+  "options": [
+    { "id": "modelType", "label": "IRT Model", "type": "radio", "default": "Rasch", "choices": [{ "label": "Rasch / 1PL", "value": "Rasch" }, { "label": "2PL", "value": "2PL" }, { "label": "3PL", "value": "3PL" }, { "label": "Graded Response", "value": "graded" }], "group": "Model" },
+    { "id": "estimation", "label": "Estimation Method", "type": "select", "default": "EM", "choices": [{ "label": "EM", "value": "EM" }, { "label": "MHRM", "value": "MHRM" }], "group": "Estimation" },
+    { "id": "itemParams", "label": "Item parameters", "type": "checkbox", "default": true, "group": "Output" },
+    { "id": "modelFit", "label": "Model fit indices", "type": "checkbox", "default": true, "group": "Output" },
+    { "id": "plotICC", "label": "Item characteristic curves", "type": "checkbox", "default": true, "group": "Plots" },
+    { "id": "plotInfo", "label": "Test information and standard error", "type": "checkbox", "default": true, "group": "Plots" }
+  ]
+}

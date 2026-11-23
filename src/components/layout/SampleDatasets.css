@@ -1,0 +1,76 @@
+.empty-workspace {
+  background: linear-gradient(180deg, #eef3f8 0%, #f7f9fc 100%);
+}
+
+.sample-empty {
+  width: min(1120px, calc(100% - 24px));
+  padding: 24px 0;
+}
+
+.sample-empty h2 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.sample-empty p {
+  margin: 0 0 14px;
+  color: #5d6e80;
+}
+
+.sample-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.sample-card {
+  position: relative;
+  min-height: 128px;
+  border: 1px solid #cfdae4;
+  border-radius: 11px;
+  background: #ffffff;
+  color: #1f2f40;
+  padding: 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.sample-card:hover {
+  border-color: #3a95cf;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px #1f2f4017;
+}
+
+.sample-card h3 {
+  margin: 16px 0 2px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.sample-card span {
+  color: #607283;
+  font-size: 12px;
+}
+
+.sample-card small {
+  color: #465869;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.sample-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: #edf5fc;
+  border: 1px solid #c8dced;
+  color: #1f6f9e;
+  font-size: 11px;
+  font-weight: 600;
+}

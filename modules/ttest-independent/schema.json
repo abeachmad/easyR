@@ -1,0 +1,28 @@
+{
+  "id": "ttest-independent",
+  "title": "Independent Samples T-Test",
+  "category": "T-Tests",
+  "variableSlots": [
+    {
+      "id": "dependent",
+      "label": "Dependent Variable",
+      "allowedTypes": ["numeric"],
+      "multiple": true,
+      "required": true
+    },
+    {
+      "id": "grouping",
+      "label": "Grouping Variable",
+      "allowedTypes": ["nominal", "ordinal"],
+      "multiple": false,
+      "required": true
+    }
+  ],
+  "options": [
+    { "id": "varEqual", "label": "Assume equal variances", "type": "checkbox", "default": false, "group": "Test Settings" },
+    { "id": "confLevel", "label": "Confidence level", "type": "number", "default": 0.95, "group": "Test Settings" },
+    { "id": "normalityTest", "label": "Shapiro-Wilk normality test", "type": "checkbox", "default": false, "group": "Diagnostics" },
+    { "id": "effectSize", "label": "Cohen's d", "type": "checkbox", "default": false, "group": "Diagnostics" },
+    { "id": "plotDescriptives", "label": "Mean with confidence interval plot", "type": "checkbox", "default": false, "group": "Plots" }
+  ]
+}

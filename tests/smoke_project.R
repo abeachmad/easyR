@@ -1,0 +1,8 @@
+source("r-engine/io_handler.R")
+dataset_path <- tempfile(fileext = ".rds")
+project_path <- tempfile(fileext = ".ostat")
+output_dir <- tempfile()
+saveRDS(mtcars, dataset_path)
+save_project(dataset_path, project_path, "[]")
+result <- open_project(project_path, output_dir)
+cat(result[["status"]], result[["rows"]], "\n")

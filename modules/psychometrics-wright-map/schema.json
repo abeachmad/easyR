@@ -1,0 +1,13 @@
+{
+  "id": "psychometrics-wright-map",
+  "title": "Wright Map / Person-Item Map",
+  "category": "Factor & Clustering",
+  "variableSlots": [
+    { "id": "items", "label": "Test Items (minimum 3)", "allowedTypes": ["numeric", "ordinal"], "multiple": true, "required": true }
+  ],
+  "options": [
+    { "id": "modelType", "label": "IRT Model", "type": "select", "default": "Rasch", "choices": [{ "label": "Rasch", "value": "Rasch" }, { "label": "2PL", "value": "2PL" }, { "label": "Graded Response", "value": "graded" }], "group": "Model" },
+    { "id": "thetaMethod", "label": "Person Ability Method", "type": "select", "default": "EAP", "choices": [{ "label": "EAP", "value": "EAP" }, { "label": "MAP", "value": "MAP" }, { "label": "ML", "value": "ML" }], "group": "Estimation" },
+    { "id": "showStats", "label": "Person and item summary table", "type": "checkbox", "default": true, "group": "Output" }
+  ]
+}
