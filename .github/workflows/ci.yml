@@ -32,5 +32,10 @@ jobs:
         with:
           r-version: '4.3'
 
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::jsonlite
+
       - name: Verify all modules
         run: Rscript tests/verify_all_modules.R
