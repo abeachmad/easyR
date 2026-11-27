@@ -33,7 +33,7 @@ jobs:
           r-version: '4.3'
 
       - name: Install R dependencies
-        run: Rscript -e "install.packages(c('jsonlite', 'ggplot2'))"
+        run: Rscript -e "install.packages(c('jsonlite','ggplot2'), repos='https://cloud.r-project.org')"
 
       - name: Verify all modules
         run: Rscript tests/verify_all_modules.R
